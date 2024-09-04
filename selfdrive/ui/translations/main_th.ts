@@ -68,23 +68,23 @@
     </message>
     <message>
         <source>Hidden Network</source>
-        <translation type="unfinished"></translation>
+        <translation>เครือข่ายที่ซ่อนอยู่</translation>
     </message>
     <message>
         <source>CONNECT</source>
-        <translation type="unfinished">เชื่อมต่อ</translation>
+        <translation>เชื่อมต่อ</translation>
     </message>
     <message>
         <source>Enter SSID</source>
-        <translation type="unfinished">ป้อนค่า SSID</translation>
+        <translation>ป้อนค่า SSID</translation>
     </message>
     <message>
         <source>Enter password</source>
-        <translation type="unfinished">ใส่รหัสผ่าน</translation>
+        <translation>ใส่รหัสผ่าน</translation>
     </message>
     <message>
         <source>for &quot;%1&quot;</source>
-        <translation type="unfinished">สำหรับ &quot;%1&quot;</translation>
+        <translation>สำหรับ &quot;%1&quot;</translation>
     </message>
 </context>
 <context>
@@ -100,14 +100,6 @@
     <message>
         <source>MAX</source>
         <translation>สูงสุด</translation>
-    </message>
-    <message>
-        <source>SPEED</source>
-        <translation>ความเร็ว</translation>
-    </message>
-    <message>
-        <source>LIMIT</source>
-        <translation>จำกัด</translation>
     </message>
 </context>
 <context>
@@ -134,33 +126,6 @@
     <message>
         <source>Decline, uninstall %1</source>
         <translation>ปฏิเสธ และถอนการติดตั้ง %1</translation>
-    </message>
-</context>
-<context>
-    <name>DestinationWidget</name>
-    <message>
-        <source>Home</source>
-        <translation>บ้าน</translation>
-    </message>
-    <message>
-        <source>Work</source>
-        <translation>ที่ทำงาน</translation>
-    </message>
-    <message>
-        <source>No destination set</source>
-        <translation>ยังไม่ได้เลือกจุดหมาย</translation>
-    </message>
-    <message>
-        <source>home</source>
-        <translation>บ้าน</translation>
-    </message>
-    <message>
-        <source>work</source>
-        <translation>ที่ทำงาน</translation>
-    </message>
-    <message>
-        <source>No %1 location set</source>
-        <translation>ยังไม่ได้เลือกตำแหน่ง%1</translation>
     </message>
 </context>
 <context>
@@ -299,11 +264,11 @@
     </message>
     <message>
         <source>Pair Device</source>
-        <translation type="unfinished"></translation>
+        <translation>จับคู่อุปกรณ์</translation>
     </message>
     <message>
         <source>PAIR</source>
-        <translation type="unfinished"></translation>
+        <translation>จับคู่</translation>
     </message>
 </context>
 <context>
@@ -342,47 +307,6 @@
     <message>
         <source>Installing...</source>
         <translation>กำลังติดตั้ง...</translation>
-    </message>
-</context>
-<context>
-    <name>MapETA</name>
-    <message>
-        <source>eta</source>
-        <translation>eta</translation>
-    </message>
-    <message>
-        <source>min</source>
-        <translation>นาที</translation>
-    </message>
-    <message>
-        <source>hr</source>
-        <translation>ชม.</translation>
-    </message>
-</context>
-<context>
-    <name>MapSettings</name>
-    <message>
-        <source>NAVIGATION</source>
-        <translation>การนำทาง</translation>
-    </message>
-    <message>
-        <source>Manage at connect.comma.ai</source>
-        <translation>จัดการได้ที่ connect.comma.ai</translation>
-    </message>
-</context>
-<context>
-    <name>MapWindow</name>
-    <message>
-        <source>Map Loading</source>
-        <translation>กำลังโหลดแผนที่</translation>
-    </message>
-    <message>
-        <source>Waiting for GPS</source>
-        <translation>กำลังรอสัญญาณ GPS</translation>
-    </message>
-    <message>
-        <source>Waiting for route</source>
-        <translation>กำลังรอเส้นทาง</translation>
     </message>
 </context>
 <context>
@@ -436,10 +360,6 @@
 %1</translation>
     </message>
     <message>
-        <source>Invalid date and time settings, system won&apos;t start. Connect to internet to set time.</source>
-        <translation>วันที่และเวลาไม่ถูกต้อง ระบบจะไม่เริ่มทำงาน เชื่อต่ออินเตอร์เน็ตเพื่อตั้งเวลา</translation>
-    </message>
-    <message>
         <source>Taking camera snapshots. System won&apos;t start until finished.</source>
         <translation>กล้องกำลังถ่ายภาพ ระบบจะไม่เริ่มทำงานจนกว่าจะเสร็จ</translation>
     </message>
@@ -491,23 +411,23 @@
     <name>OnroadAlerts</name>
     <message>
         <source>openpilot Unavailable</source>
-        <translation type="unfinished"></translation>
+        <translation>openpilot ไม่สามารถใช้งานได้</translation>
     </message>
     <message>
         <source>Waiting for controls to start</source>
-        <translation type="unfinished"></translation>
+        <translation>กำลังรอให้ controls เริ่มทำงาน</translation>
     </message>
     <message>
         <source>TAKE CONTROL IMMEDIATELY</source>
-        <translation type="unfinished"></translation>
+        <translation>เข้าควบคุมรถเดี๋ยวนี้</translation>
     </message>
     <message>
         <source>Controls Unresponsive</source>
-        <translation type="unfinished"></translation>
+        <translation>Controls ไม่ตอบสนอง</translation>
     </message>
     <message>
         <source>Reboot Device</source>
-        <translation type="unfinished"></translation>
+        <translation>รีบูตอุปกรณ์</translation>
     </message>
 </context>
 <context>
@@ -567,8 +487,8 @@
         <translation>จัดเก็บข้อมูลการขับขี่นาน 1 ปี</translation>
     </message>
     <message>
-        <source>Turn-by-turn navigation</source>
-        <translation>การนำทางแบบเลี้ยวต่อเลี้ยว</translation>
+        <source>Remote snapshots</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -615,24 +535,8 @@
         </translation>
     </message>
     <message>
-        <source>km</source>
-        <translation>กม.</translation>
-    </message>
-    <message>
-        <source>m</source>
-        <translation>ม.</translation>
-    </message>
-    <message>
-        <source>mi</source>
-        <translation>ไมล์</translation>
-    </message>
-    <message>
-        <source>ft</source>
-        <translation>ฟุต</translation>
-    </message>
-    <message>
         <source>now</source>
-        <translation type="unfinished"></translation>
+        <translation>ตอนนี้</translation>
     </message>
 </context>
 <context>
@@ -673,7 +577,7 @@ This may take up to a minute.</source>
     </message>
     <message>
         <source>System reset triggered. Press confirm to erase all content and settings. Press cancel to resume boot.</source>
-        <translation type="unfinished"></translation>
+        <translation>ระบบถูกรีเซ็ต กดยืนยันเพื่อลบข้อมูลและการตั้งค่าทั้งหมด กดยกเลิกเพื่อบูตต่อ</translation>
     </message>
 </context>
 <context>
@@ -783,15 +687,15 @@ This may take up to a minute.</source>
     </message>
     <message>
         <source>Choose Software to Install</source>
-        <translation type="unfinished"></translation>
+        <translation>เลือกซอฟต์แวร์ที่จะติดตั้ง</translation>
     </message>
     <message>
         <source>openpilot</source>
-        <translation type="unfinished">openpilot</translation>
+        <translation>openpilot</translation>
     </message>
     <message>
         <source>Custom Software</source>
-        <translation type="unfinished"></translation>
+        <translation>ซอฟต์แวร์ที่กำหนดเอง</translation>
     </message>
 </context>
 <context>
@@ -854,14 +758,6 @@ This may take up to a minute.</source>
     <message>
         <source>PANDA</source>
         <translation>PANDA</translation>
-    </message>
-    <message>
-        <source>GPS</source>
-        <translation>จีพีเอส</translation>
-    </message>
-    <message>
-        <source>SEARCH</source>
-        <translation>ค้นหา</translation>
     </message>
     <message>
         <source>--</source>
@@ -1075,22 +971,6 @@ This may take up to a minute.</source>
         <translation>เมื่อเปิดใช้งาน การกดแป้นคันเร่งจะเป็นการยกเลิกระบบช่วยขับโดย openpilot</translation>
     </message>
     <message>
-        <source>Show ETA in 24h Format</source>
-        <translation>แสดงเวลา ETA ในรูปแบบ 24 ชั่วโมง</translation>
-    </message>
-    <message>
-        <source>Use 24h format instead of am/pm</source>
-        <translation>ใช้รูปแบบเวลา 24 ชั่วโมง แทน am/pm</translation>
-    </message>
-    <message>
-        <source>Show Map on Left Side of UI</source>
-        <translation>แสดงแผนที่ที่ด้านซ้ายของหน้าจอ</translation>
-    </message>
-    <message>
-        <source>Show map on left side when in split screen view.</source>
-        <translation>แสดงแผนที่ด้านซ้ายของหน้าจอเมื่ออยู่ในโหมดแบ่งหน้าจอ</translation>
-    </message>
-    <message>
         <source>Experimental Mode</source>
         <translation>โหมดทดลอง</translation>
     </message>
@@ -1156,10 +1036,18 @@ This may take up to a minute.</source>
     </message>
     <message>
         <source>Standard is recommended. In aggressive mode, openpilot will follow lead cars closer and be more aggressive with the gas and brake. In relaxed mode openpilot will stay further away from lead cars. On supported cars, you can cycle through these personalities with your steering wheel distance button.</source>
+        <translation>แนะนำให้ใช้แบบมาตรฐาน ในโหมดดุดัน openpilot จะตามรถคันหน้าใกล้ขึ้นและเร่งและเบรคแบบดุดันมากขึ้น ในโหมดผ่อนคลาย openpilot จะอยู่ห่างจากรถคันหน้ามากขึ้น ในรถรุ่นที่รองรับคุณสามารถเปลี่ยนบุคลิกไปแบบต่าง ๆ โดยใช้ปุ่มปรับระยะห่างบนพวงมาลัย</translation>
+    </message>
+    <message>
+        <source>The driving visualization will transition to the road-facing wide-angle camera at low speeds to better show some turns. The Experimental mode logo will also be shown in the top right corner.</source>
+        <translation>การแสดงภาพการขับขี่จะเปลี่ยนไปใช้กล้องมุมกว้างที่หันหน้าไปทางถนนเมื่ออยู่ในความเร็วต่ำ เพื่อแสดงภาพการเลี้ยวที่ดีขึ้น โลโก้โหมดการทดลองจะแสดงที่มุมบนขวาด้วย</translation>
+    </message>
+    <message>
+        <source>Always-On Driver Monitoring</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The driving visualization will transition to the road-facing wide-angle camera at low speeds to better show some turns. The Experimental mode logo will also be shown in the top right corner. </source>
+        <source>Enable driver monitoring even when openpilot is not engaged.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

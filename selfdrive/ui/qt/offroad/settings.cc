@@ -52,6 +52,12 @@ TogglesPanel::TogglesPanel(SettingsWindow *parent) : ListWidget(parent) {
       "../assets/offroad/icon_warning.png",
     },
     {
+      "AlwaysOnDM",
+      tr("Always-On Driver Monitoring"),
+      tr("Enable driver monitoring even when openpilot is not engaged."),
+      "../assets/offroad/icon_monitoring.png",
+    },
+    {
       "RecordFront",
       tr("Record and Upload Driver Camera"),
       tr("Upload data from the driver facing camera and help improve the driver monitoring algorithm."),
@@ -63,20 +69,6 @@ TogglesPanel::TogglesPanel(SettingsWindow *parent) : ListWidget(parent) {
       tr("Display speed in km/h instead of mph."),
       "../assets/offroad/icon_metric.png",
     },
-#ifdef ENABLE_MAPS
-    {
-      "NavSettingTime24h",
-      tr("Show ETA in 24h Format"),
-      tr("Use 24h format instead of am/pm"),
-      "../assets/offroad/icon_metric.png",
-    },
-    {
-      "NavSettingLeftSide",
-      tr("Show Map on Left Side of UI"),
-      tr("Show map on left side when in split screen view."),
-      "../assets/offroad/icon_road.png",
-    },
-#endif
   };
 
 
@@ -119,8 +111,8 @@ TogglesPanel::TogglesPanel(SettingsWindow *parent) : ListWidget(parent) {
 void TogglesPanel::updateState(const UIState &s) {
   const SubMaster &sm = *(s.sm);
 
-  if (sm.updated("controlsState")) {
-    auto personality = sm["controlsState"].getControlsState().getPersonality();
+  if (sm.updated("selfdriveState")) {
+    auto personality = sm["selfdriveState"].getSelfdriveState().getPersonality();
     if (personality != s.scene.personality && s.scene.started && isVisible()) {
       long_personality_setting->setCheckedButton(static_cast<int>(personality));
     }
@@ -150,7 +142,7 @@ void TogglesPanel::updateToggles() {
                                           "Since the driving model decides the speed to drive, the set speed will only act as an upper bound. This is an alpha quality feature; "
                                           "mistakes should be expected."))
                                   .arg(tr("New Driving Visualization"))
-                                  .arg(tr("The driving visualization will transition to the road-facing wide-angle camera at low speeds to better show some turns. The Experimental mode logo will also be shown in the top right corner. "));
+                                  .arg(tr("The driving visualization will transition to the road-facing wide-angle camera at low speeds to better show some turns. The Experimental mode logo will also be shown in the top right corner."));
 
   const bool is_release = params.getBool("IsReleaseBranch");
   auto cp_bytes = params.get("CarParamsPersistent");
@@ -255,8 +247,8 @@ DevicePanel::DevicePanel(SettingsWindow *parent) : ListWidget(parent) {
   });
   addItem(translateBtn);
 
-  QObject::connect(uiState(), &UIState::primeChanged, [this] (bool prime) {
-    pair_device->setVisible(!prime);
+  QObject::connect(uiState(), &UIState::primeTypeChanged, [this] (PrimeType type) {
+    pair_device->setVisible(type == PrimeType::PRIME_TYPE_UNPAIRED);
   });
   QObject::connect(uiState(), &UIState::offroadTransition, [=](bool offroad) {
     for (auto btn : findChildren<ButtonControl *>()) {
@@ -344,7 +336,7 @@ void DevicePanel::poweroff() {
 }
 
 void DevicePanel::showEvent(QShowEvent *event) {
-  pair_device->setVisible(!uiState()->primeType());
+  pair_device->setVisible(uiState()->primeType() == PrimeType::PRIME_TYPE_UNPAIRED);
   ListWidget::showEvent(event);
 }
 
